@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>5 variations of Burger Menu</h1>
+        <h2>Transformation to close button<h2>
+        <button class="button menu-switcher" type="button">
+            <span class="menu-switcher__line">Открыть меню</span>
+        </button>
+        <h2>Transformation to left arrow button<h2>
+        <button class="button menu-switcher menu-switcher--arrow-left" type="button">
+            <span class="menu-switcher__line">Открыть меню</span>
+        </button>
+        <h2>Transformation to right arrow button<h2>
+        <button class="button menu-switcher menu-switcher--arrow-right" type="button">
+            <span class="menu-switcher__line">Открыть меню</span>
+        </button>
+        <h2>Transformation to bottom arrow button<h2>
+        <button class="button menu-switcher menu-switcher--arrow-bottom" type="button">
+            <span class="menu-switcher__line">Открыть меню</span>
+        </button>
+        <h2>Transformation to top arrow button<h2>
+        <button class="button menu-switcher menu-switcher--arrow-top" type="button">
+            <span class="menu-switcher__line">Открыть меню</span>
+        </button>
+        <script>
+            var buttons = document.querySelectorAll(".menu-switcher");
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].addEventListener("click", function() {
+                    this.classList.toggle('menu-switcher--active');
+                });
+            }
+        </script>
+    </body>
+</html>
