@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 body {
     padding: 0;
     margin: 0;
@@ -22,7 +24,9 @@ body {
     width: 100%;
     height: 2px;
     background-color: rgba(0, 0, 0, 1);
-    transition-duration: .4s;
+    -webkit-transition-duration: .4s;
+         -o-transition-duration: .4s;
+            transition-duration: .4s;
 }
 .menu-switcher__line::before,
 .menu-switcher__line::after {
@@ -38,11 +42,15 @@ body {
 * simple close animation
 */
 .menu-switcher--active .menu-switcher__line {   
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);   
+        -ms-transform: rotate(45deg);   
+            transform: rotate(45deg);
 }
 .menu-switcher--active .menu-switcher__line::before {  
     top: 0;    
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);    
+        -ms-transform: rotate(90deg);    
+            transform: rotate(90deg);
 }
 .menu-switcher--active .menu-switcher__line::after {  
     display: none;
@@ -51,7 +59,9 @@ body {
 * arrow-left-animation 
 */
 .menu-switcher--active.menu-switcher--arrow-left .menu-switcher__line {   
-    transform: none;
+    -webkit-transform: none;   
+        -ms-transform: none;   
+            transform: none;
 }
 .menu-switcher--active.menu-switcher--arrow-left .menu-switcher__line::before,
 .menu-switcher--active.menu-switcher--arrow-left .menu-switcher__line::after {
@@ -60,16 +70,22 @@ body {
 }
 .menu-switcher--active.menu-switcher--arrow-left .menu-switcher__line::after {  
     display: block;
-    transform: translate(-3px, -3px) rotate(45deg);
+    -webkit-transform: translate(-3px, -3px) rotate(45deg);
+        -ms-transform: translate(-3px, -3px) rotate(45deg);
+            transform: translate(-3px, -3px) rotate(45deg);
 }
 .menu-switcher--active.menu-switcher--arrow-left .menu-switcher__line::before {  
-    transform: translate(-3px, -5px) rotate(-45deg);    
+    -webkit-transform: translate(-3px, -5px) rotate(-45deg);  
+        -ms-transform: translate(-3px, -5px) rotate(-45deg);  
+            transform: translate(-3px, -5px) rotate(-45deg);    
 }
 /** 
 * arrow-right-animation 
 */
 .menu-switcher--active.menu-switcher--arrow-right .menu-switcher__line {   
-    transform: none;
+    -webkit-transform: none;   
+        -ms-transform: none;   
+            transform: none;
 }
 .menu-switcher--active.menu-switcher--arrow-right .menu-switcher__line::before,
 .menu-switcher--active.menu-switcher--arrow-right .menu-switcher__line::after {
@@ -78,16 +94,22 @@ body {
 }
 .menu-switcher--active.menu-switcher--arrow-right .menu-switcher__line::after {  
     display: block;
-    transform: translate(13px, -3px) rotate(-45deg);
+    -webkit-transform: translate(13px, -3px) rotate(-45deg);
+        -ms-transform: translate(13px, -3px) rotate(-45deg);
+            transform: translate(13px, -3px) rotate(-45deg);
 }
 .menu-switcher--active.menu-switcher--arrow-right .menu-switcher__line::before {  
-    transform: translate(13px, -5px) rotate(45deg);    
+    -webkit-transform: translate(13px, -5px) rotate(45deg);  
+        -ms-transform: translate(13px, -5px) rotate(45deg);  
+            transform: translate(13px, -5px) rotate(45deg);    
 }
 /** 
 * arrow-bottom-animation 
 */
 .menu-switcher--active.menu-switcher--arrow-bottom .menu-switcher__line {   
-    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);   
+        -ms-transform: rotate(90deg);   
+            transform: rotate(90deg);
 }
 .menu-switcher--active.menu-switcher--arrow-bottom .menu-switcher__line::before,
 .menu-switcher--active.menu-switcher--arrow-bottom .menu-switcher__line::after {
@@ -96,16 +118,22 @@ body {
 }
 .menu-switcher--active.menu-switcher--arrow-bottom .menu-switcher__line::after {  
     display: block;
-    transform: translate(13px, -3px) rotate(-45deg);
+    -webkit-transform: translate(13px, -3px) rotate(-45deg);
+        -ms-transform: translate(13px, -3px) rotate(-45deg);
+            transform: translate(13px, -3px) rotate(-45deg);
 }
 .menu-switcher--active.menu-switcher--arrow-bottom .menu-switcher__line::before {  
-    transform: translate(13px, -5px) rotate(45deg);    
+    -webkit-transform: translate(13px, -5px) rotate(45deg);  
+        -ms-transform: translate(13px, -5px) rotate(45deg);  
+            transform: translate(13px, -5px) rotate(45deg);    
 }
 /** 
 * arrow-top-animation 
 */
 .menu-switcher--active.menu-switcher--arrow-top .menu-switcher__line {   
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);   
+        -ms-transform: rotate(-90deg);   
+            transform: rotate(-90deg);
 }
 .menu-switcher--active.menu-switcher--arrow-top .menu-switcher__line::before,
 .menu-switcher--active.menu-switcher--arrow-top .menu-switcher__line::after {
@@ -114,8 +142,12 @@ body {
 }
 .menu-switcher--active.menu-switcher--arrow-top .menu-switcher__line::after {  
     display: block;
-    transform: translate(13px, -3px) rotate(-45deg);
+    -webkit-transform: translate(13px, -3px) rotate(-45deg);
+        -ms-transform: translate(13px, -3px) rotate(-45deg);
+            transform: translate(13px, -3px) rotate(-45deg);
 }
 .menu-switcher--active.menu-switcher--arrow-top .menu-switcher__line::before {  
-    transform: translate(13px, -5px) rotate(45deg);    
+    -webkit-transform: translate(13px, -5px) rotate(45deg);  
+        -ms-transform: translate(13px, -5px) rotate(45deg);  
+            transform: translate(13px, -5px) rotate(45deg);    
 }
